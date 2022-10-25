@@ -34,8 +34,3 @@ postList.get("/", (req, res) => {
     res.send(html);
   })
 
-const PORT = 3000;
-
-postList.listen(PORT, () => {
-  console.log(`PostList listening in port ${PORT}`);
-});

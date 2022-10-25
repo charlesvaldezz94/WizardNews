@@ -10,7 +10,7 @@ app.use(morgan('dev'))
 app.use(express.static(__dirname + '/public'))
 
 app.get("/", (req, res) => {
-  const posts = postBand.list()
+  const posts = postBank.list()
   res.send(postList(posts));
 })
 
